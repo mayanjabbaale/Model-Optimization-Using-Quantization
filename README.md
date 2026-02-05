@@ -10,3 +10,13 @@ The basic flow is as follow:
 3. Preparing the model for quantization. For example, folding batch-norm into preceding conv2d operators, and inserting observers in appropriate places to collect activation statistics needed for calibration.
 4. Running inference on calibration data to collect activation statistics
 5. Converts calibrated model to a quantized model. While the quantized model already takes less space, it is not yet optimized for the final deployment.
+
+'''
+from torch.ao.quantization.quantize_pt2e import (
+  prepare_pt2e,
+  convert_pt2e,
+)
+
+import torch.ao.quantization.quantizer.x86_inductor_quantizer as xiq
+from torch.ao.quantization.quantizer.x86_inductor_quantizer import X86InductorQuantizer
+'''
