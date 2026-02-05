@@ -16,6 +16,24 @@ from torch.ao.quantization.quantize_pt2e import (
   prepare_pt2e,
   convert_pt2e,
 )
-
 import torch.ao.quantization.quantizer.x86_inductor_quantizer as xiq
 from torch.ao.quantization.quantizer.x86_inductor_quantizer import X86InductorQuantizer
+
+# Project Title: PyTorch Quantization Helper
+
+A brief, one-sentence description of what this project does (e.g., "A utility library for streamlining PT2E quantization workflows in PyTorch").
+
+## 🚀 Quick Start
+
+### Prerequisites
+* Python 3.12+
+* PyTorch 2.4+
+
+### Installation
+Clone the repository and install the dependencies:
+
+```bash
+git clone [https://github.com/yourusername/your-repo-name.git](https://github.com/yourusername/your-repo-name.git)
+cd your-repo-name
+pip install -r requirements.txt
+
