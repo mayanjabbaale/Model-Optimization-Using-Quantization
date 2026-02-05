@@ -11,7 +11,7 @@ The basic flow is as follow:
 4. Running inference on calibration data to collect activation statistics
 5. Converts calibrated model to a quantized model. While the quantized model already takes less space, it is not yet optimized for the final deployment.
 
-'''
+'''python
 from torch.ao.quantization.quantize_pt2e import (
   prepare_pt2e,
   convert_pt2e,
@@ -19,4 +19,3 @@ from torch.ao.quantization.quantize_pt2e import (
 
 import torch.ao.quantization.quantizer.x86_inductor_quantizer as xiq
 from torch.ao.quantization.quantizer.x86_inductor_quantizer import X86InductorQuantizer
-'''
