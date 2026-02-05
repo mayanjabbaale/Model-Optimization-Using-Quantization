@@ -2,7 +2,7 @@
 
 This code explores the different types of quantization, and apply both post training quantization (PTQ) and quantization aware training (QAT) on a simple example using CIFAR-10 and ResNet18. The process achieves a 75% reduction in space and 16% reduction in GPU latency with only 1% drop in accuracy.
 
-##After basic training.
+## After basic training.
 ```bash
 Size (full): 44.77 MB
 Accuracy (full): 80.53%
@@ -51,5 +51,7 @@ Accuracy (optimized): 79.54%
 Latency (optimized, on CPU): 831.76 ± 39.63 ms
 Latency (optimized, on GPU): 13.71 ± 0.24 ms
 ```
+
+Inspired by the piece by: [https://arikpoz.github.io/posts/2025-04-16-neural-network-quantization-in-pytorch/]
 
 
