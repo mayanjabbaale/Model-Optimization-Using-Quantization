@@ -52,6 +52,6 @@ Latency (optimized, on CPU): 831.76 ± 39.63 ms
 Latency (optimized, on GPU): 13.71 ± 0.24 ms
 ```
 
-Inspired by the piece by: [https://arikpoz.github.io/posts/2025-04-16-neural-network-quantization-in-pytorch/]
+Inspired by this piece: [ https://arikpoz.github.io/posts/2025-04-16-neural-network-quantization-in-pytorch/ ]
 
 
